@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1583</width>
+    <height>872</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pb_ajouter_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Formation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ajouter_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Formateur</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>1191</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>1381</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Gestion Formation</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>156</width>
+          <height>531</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>ID_FORMATION</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>TITREFORMATION</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>DESCRIPTION</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>DUREE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>DATEDEBUT</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>DATEFIN</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>ID_FORMATEUR</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLineEdit" name="le_ID_FORMATION">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>60</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurle_ID_FORMATION">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>80</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_TITREFORMATION">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>130</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_DESCRIPTION">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>220</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_ID_FORMATEURFK">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>520</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurDescription">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>250</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurdateEditDATEDEBUT">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>410</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurdateEditDATEFIN">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>480</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurle_ID_FORMATEURFK">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>550</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_suppformation">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>430</y>
+          <width>491</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_supprimerFormation">
+        <property name="geometry">
+         <rect>
+          <x>1000</x>
+          <y>430</y>
+          <width>120</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri Light</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Bureau/Gestion_voiture/ressources/-.png</normaloff>../../Bureau/Gestion_voiture/ressources/-.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tab_Formation">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>110</y>
+          <width>591</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="Personnel_Infos_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>391</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+	background: rgba(64,66,226,20); 
+    border: 2px solid;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+    border-color: rgba(199, 153, 207, 200);
+    margin-top: 22px;
+}
+QGroupBox::title  {
+    background-color: rgba(64,66,226,100);
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 5px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Formulaire Formation</string>
+        </property>
+        <widget class="QPushButton" name="pb_ajouterFormation">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>560</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Ajouter</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_modifierFormation">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>560</y>
+           <width>101</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}</string>
+         </property>
+         <property name="text">
+          <string>modifier</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_afficherFormation">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>560</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Afficher</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_DUREE">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>280</y>
+           <width>199</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblErreurle_DUREE">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>320</y>
+           <width>221</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEditDATEDEBUT">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>360</y>
+           <width>181</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEditDATEFIN">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>440</y>
+           <width>181</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblErreurle_TITREFORMATION">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>150</y>
+           <width>221</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>-140</x>
+          <y>-70</y>
+          <width>1861</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/img/274447901_1270325840157442_8437734761897421717_n.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>img/274447901_1270325840157442_8437734761897421717_n.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_rechercheformation">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>30</y>
+          <width>231</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <zorder>label_12</zorder>
+       <zorder>Personnel_Infos_2</zorder>
+       <zorder>layoutWidget</zorder>
+       <zorder>le_ID_FORMATION</zorder>
+       <zorder>lblErreurle_ID_FORMATION</zorder>
+       <zorder>le_TITREFORMATION</zorder>
+       <zorder>le_DESCRIPTION</zorder>
+       <zorder>le_ID_FORMATEURFK</zorder>
+       <zorder>lblErreurDescription</zorder>
+       <zorder>lblErreurdateEditDATEDEBUT</zorder>
+       <zorder>lblErreurdateEditDATEFIN</zorder>
+       <zorder>lblErreurle_ID_FORMATEURFK</zorder>
+       <zorder>lineEdit_suppformation</zorder>
+       <zorder>pb_supprimerFormation</zorder>
+       <zorder>tab_Formation</zorder>
+       <zorder>lineEdit_rechercheformation</zorder>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>1381</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Gestion Formation</string>
+       </attribute>
+       <widget class="QLineEdit" name="le_PRENOMFORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>200</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>156</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>ID_FORMATEUR</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>NOMFORMATEUR</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>PRENOMFORMATEUR</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>SPECIALITE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>EXPERIENCE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>EMAILFORMATEUR</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>TELEPHONEFORMATEUR</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLineEdit" name="le_ID_FORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>60</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurle_PRENOMFORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>220</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_NOMFORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>130</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_SPECIALITE">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>260</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_EMAILFORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>400</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_TELEPHONEFORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>460</y>
+          <width>199</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurle_SPECIALITE">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>290</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurle_EMAILFORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>430</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurle_TELEPHONEFORMATEUR">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>480</y>
+          <width>221</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_supp_formateur">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>430</y>
+          <width>491</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="supprimerformateur">
+        <property name="geometry">
+         <rect>
+          <x>1000</x>
+          <y>430</y>
+          <width>120</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri Light</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Bureau/Gestion_voiture/ressources/-.png</normaloff>../../Bureau/Gestion_voiture/ressources/-.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tab_formateur">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>110</y>
+          <width>591</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="Personnel_Infos_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>391</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+	background: rgba(64,66,226,20); 
+    border: 2px solid;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+    border-color: rgba(199, 153, 207, 200);
+    margin-top: 22px;
+}
+QGroupBox::title  {
+    background-color: rgba(64,66,226,100);
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 5px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Formulaire Formateur</string>
+        </property>
+        <widget class="QPushButton" name="ajouterformateur">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>560</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Ajouter</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="modifierformateur">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>560</y>
+           <width>101</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}</string>
+         </property>
+         <property name="text">
+          <string>modifier</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="afficherformateur">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>560</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgba(254,179,177,255);
+border-radius: 10px;
+border: 2px solid rgba(254,179,177,200);
+}
+QPushButton:hover {
+background-color: rgba(233,96,90,255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Afficher</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_EXPERIENCE">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>320</y>
+           <width>199</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblErreurle_EXPERIENCE">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>350</y>
+           <width>221</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblErreurle_ID_FORMATEUR">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>90</y>
+           <width>221</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblErreurIdle_NOMFORMATEUR">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>150</y>
+           <width>231</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>-140</x>
+          <y>-70</y>
+          <width>1861</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/img/274447901_1270325840157442_8437734761897421717_n.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>img/274447901_1270325840157442_8437734761897421717_n.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblErreurId_3">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>550</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_rechercheformateur">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>30</y>
+          <width>231</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="qrcode">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>220</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+background-color: rgba(254,179,177,20);
+border: 2px solid rgba(254,179,177,200);
+border-radius: 10px;
+}
+QLineEdit:hover {
+background-color: rgba(254,179,177,200);
+border: 1px solid rgba(128, 97, 171, 200);
+border-radius: 10px;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="qrcodecommande_2">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>10</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_18</zorder>
+       <zorder>Personnel_Infos_3</zorder>
+       <zorder>le_PRENOMFORMATEUR</zorder>
+       <zorder>layoutWidget_2</zorder>
+       <zorder>le_ID_FORMATEUR</zorder>
+       <zorder>lblErreurle_PRENOMFORMATEUR</zorder>
+       <zorder>le_NOMFORMATEUR</zorder>
+       <zorder>le_SPECIALITE</zorder>
+       <zorder>le_EMAILFORMATEUR</zorder>
+       <zorder>le_TELEPHONEFORMATEUR</zorder>
+       <zorder>lblErreurle_SPECIALITE</zorder>
+       <zorder>lblErreurle_EMAILFORMATEUR</zorder>
+       <zorder>lblErreurle_TELEPHONEFORMATEUR</zorder>
+       <zorder>lineEdit_supp_formateur</zorder>
+       <zorder>supprimerformateur</zorder>
+       <zorder>tab_formateur</zorder>
+       <zorder>lblErreurId_3</zorder>
+       <zorder>lineEdit_rechercheformateur</zorder>
+       <zorder>qrcode</zorder>
+       <zorder>qrcodecommande_2</zorder>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1583</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
